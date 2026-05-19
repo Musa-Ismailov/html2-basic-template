@@ -1,0 +1,140 @@
+.demonstration__card--decaf {
+  background-color: #F3EBE1;
+}
+
+.demonstration__img {
+  margin: 0 auto 10px;
+  padding-top: 20px;
+  display: block;
+}
+
+.demonstration__title {
+  color: #7859CF;
+  font-size: 12px;
+  margin: 0 0 4px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.demonstration__card-title {
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.demonstration__card-description {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.demonstration__card {
+  padding: 0 20px 60px;
+}
+
+.demonstration__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: #7859CF;
+  margin-right: 6px;
+}
+
+.demonstration__new-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.demonstration__price-container {
+  display: flex;
+  justify-content: center;
+}
+
+.demonstration__card--lavender {
+  background-color: #EAE6FC;
+}
+
+.demonstration__card--triple {
+  background-color: #E5E6E8;
+}
+
+.demonstration__slider-prev {
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 20px;
+  background-color: rgba($color: #000000, $alpha: 0);
+  cursor: pointer;
+}
+
+.demonstration__slider-prev::before {
+  mask-image: url("../../images/arrow.svg");
+  width: 20px;
+  mask-size: 11px 20px;
+  mask-repeat: no-repeat;
+  background-color: #7859CF;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 4px;
+  content: "";
+}
+.demonstration__slider-next {
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  background-color: rgba($color: #000000, $alpha: 0);
+  cursor: pointer;
+}
+
+.demonstration__slider-next::before {
+  mask-image: url("../../images/arrow.svg");
+  width: 20px;
+  mask-size: 11px 20px;
+  mask-repeat: no-repeat;
+  transform: translateY(-50%)  rotate(180deg);
+  background-color: #7859CF;
+  position: absolute;
+  top: 0;
+  bottom: -40px;
+  right: 4px;
+  content: "";
+}
+
+.demonstration__pagination {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.demonstration__pagination-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  mask-image: url("../../images/pagination.svg");
+  width: 62px;
+  height: 4px;
+  mask-size: 62px 4px;
+  mask-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+
+.demonstration__slider-track {
+  position: relative;
+}
