@@ -1,1 +1,24 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+body {
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 1440px;
+  }
+}
