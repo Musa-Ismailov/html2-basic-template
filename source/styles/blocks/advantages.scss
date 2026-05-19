@@ -1,0 +1,54 @@
+.advantages {
+  padding: 50px 20px 60px;
+}
+
+.advantages__list-title {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 36px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.advantages__item-title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 4px;
+
+  &::before {
+    width: 52px;
+    height: 56px;
+    background-image: url("../../icons/clock.svg");
+    display: block;
+    content: "";
+    margin: 0 auto 10px;
+  }
+}
+
+.advantages__item-description {
+  text-align: center;
+  margin: 0;
+}
+
+.advantages__item--pocket .advantages__item-title::before {
+  background-image: url("../../icons/pocket.svg");
+}
+
+.advantages__item--zip .advantages__item-title::before {
+  background-image: url("../../icons/zip.svg");
+  width: 42px;
+}
+
+.advantages__item--leaf .advantages__item-title::before {
+  background-image: url("../../icons/leaf.svg");
+  width: 46px;
+}
