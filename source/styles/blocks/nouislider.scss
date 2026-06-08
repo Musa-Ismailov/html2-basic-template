@@ -1,0 +1,36 @@
+/* 1. Убираем стандартные псевдоэлементы (ушки) */
+.noUi-handle::before,
+.noUi-handle::after {
+    display: none !important;
+}
+
+/* 2. Стилизуем саму ручку */
+.noUi-handle.noUi-handle.noUi-handle {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9070EC;
+  top: -10px;
+}
+
+.catalog__slider.noUi-target {
+  height: 2px;
+  margin: 11px 0 35px;
+}
+
+.noUi-base.noUi-base   {
+  height: 4px;
+}
+
+.noUi-connect.noUi-connect {
+  background: #9070EC;
+  top: 0;
+}
+
+.noUi-connects.noUi-connects {
+  overflow: visible;
+}
+
+.noUi-base.noUi-base {
+  top: -2px;
+}

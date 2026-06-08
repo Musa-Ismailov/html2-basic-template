@@ -22,3 +22,11 @@
   font-style: normal;
   font-weight: 600;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"),
+  url("../../fonts/Montserrat-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
