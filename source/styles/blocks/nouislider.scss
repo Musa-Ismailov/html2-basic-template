@@ -1,10 +1,8 @@
-/* 1. Убираем стандартные псевдоэлементы (ушки) */
 .noUi-handle::before,
 .noUi-handle::after {
     display: none !important;
 }
 
-/* 2. Стилизуем саму ручку */
 .noUi-handle.noUi-handle.noUi-handle {
   border-radius: 50%;
   width: 24px;

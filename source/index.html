@@ -266,10 +266,12 @@
           <button type="button" class="button cotolog__button">Применить</button>
           <button type="button" class="button cotolog__button cotolog__button--reset">Сбросить</button>
           <fieldset class="catalog__sorting-group">
-            <legend class="catalog__sorting-title">Сортировка:</legend>
-            <select class="catalog__select" aria-label="Сортировка">
-              <option value="default">по умолчанию</option>
-            </select>
+            <h3 class="catalog__sorting-title">Сортировка:</h3>
+            <div class="catalog__select-container">
+              <select class="catalog__select" aria-label="Сортировка">
+                <option value="default">по умолчанию</option>
+              </select>
+            </div>
           </fieldset>
         </form>
         <ul class="catalog__product-list">
@@ -281,6 +283,10 @@
             </picture>
             <h4 class="catalog__product-title">Декаф Флэт Уайт</h4>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="catalog__product-container">
+              <p class="catalog__product-price">225₽</p>
+              <button type="button" class="button cotolog__product-button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__product-item">
             <picture>
@@ -290,6 +296,10 @@
             </picture>
             <h4 class="catalog__product-title">Декаф Флэт Уайт</h4>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="catalog__product-container">
+              <p class="catalog__product-price">225₽</p>
+              <button type="button" class="button cotolog__product-button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__product-item">
             <picture>
@@ -299,6 +309,10 @@
             </picture>
             <h4 class="catalog__product-title">Декаф Флэт Уайт</h4>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="catalog__product-container">
+              <p class="catalog__product-price">225₽</p>
+              <button type="button" class="button cotolog__product-button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__product-item">
             <picture>
@@ -308,6 +322,10 @@
             </picture>
             <h4 class="catalog__product-title">Декаф Флэт Уайт</h4>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="catalog__product-container">
+              <p class="catalog__product-price">225₽</p>
+              <button type="button" class="button cotolog__product-button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__product-item">
             <picture>
@@ -317,6 +335,10 @@
             </picture>
             <h4 class="catalog__product-title">Декаф Флэт Уайт</h4>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="catalog__product-container">
+              <p class="catalog__product-price">225₽</p>
+              <button type="button" class="button cotolog__product-button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__product-item">
             <picture>
@@ -326,16 +348,20 @@
             </picture>
             <h4 class="catalog__product-title">Декаф Флэт Уайт</h4>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="catalog__product-container">
+              <p class="catalog__product-price">225₽</p>
+              <button type="button" class="button cotolog__product-button">В корзину</button>
+            </div>
           </li>
         </ul>
         <ul class="catalog__pagination">
           <li class="catalog__pagination-item">
-            <a class="catalog__pagination-link catalog__pagination--prev catalog__pagination--disabled">
+            <a class="catalog__pagination-link catalog__pagination--scroll catalog__pagination--prev catalog__pagination--disabled">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
-          <li class="catalog__pagination-item">
-            <a class="catalog__pagination-link catalog__pagination--current">1</a>
+          <li class="catalog__pagination-item catalog__pagination-item--current ">
+            <a class="catalog__pagination-link" href="#">1</a>
           </li>
           <li class="catalog__pagination-item">
             <a class="catalog__pagination-link" href="#">2</a>
@@ -344,7 +370,7 @@
             <a class="catalog__pagination-link" href="#">3</a>
           </li>
           <li class="catalog__pagination-item">
-            <a class="catalog__pagination-link catalog__pagination-next" href="#">
+            <a class="catalog__pagination-link catalog__pagination--scroll catalog__pagination-next" href="#">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
