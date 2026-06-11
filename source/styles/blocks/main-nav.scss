@@ -4,12 +4,21 @@
 
 .main-nav {
   display: flex;
+  @media (min-width:768px) {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__navigation-list {
   display: none;
 
-  
+  @media(min-width: 768px) {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .main-nav__user-list {
@@ -17,6 +26,10 @@
   list-style: none;
   margin: 0 0 0 auto;
   padding: 0;
+
+  @media (min-width:768px) {
+    margin: 0;
+  }
 }
 
 .main-nav__user-link {
@@ -52,4 +65,20 @@
 .main-nav__logo-link {
   align-content: center;
   margin-left: 20px;
+}
+
+.main-nav__item-link {
+  padding: 32px 20px;
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.main-nav__item-link--current {
+  color: #7859CF;
+  border-bottom: 2px solid #7859CF;
+  padding-bottom: 30px;
 }
