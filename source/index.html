@@ -386,18 +386,22 @@
             <source media="(min-width:768px)" width="82" height="36" srcset="images/desktop-logo-drink.svg" type="image/svg+xml">
             <img src="images/table-logo-drink.svg" alt="логотип магазина" width="82" height="36">
         </picture>
+        <p class="main-footer__description">
+            Интернет-магазин
+            кофейных напитков
+          </p>
         <ul class="main-footer__social-list">
-          <li class="main-footer__social-item">
+          <li class="main-footer__social-item main-footer__social-item--vk">
             <a href="#">
               <span class="visually-hidden">Мы в контакте</span>
             </a>
           </li>
-          <li class="main-footer__social-item">
+          <li class="main-footer__social-item main-footer__social-item--pint">
             <a href="#">
               <span class="visually-hidden">Мы в пинтерест</span>
             </a>
           </li>
-          <li class="main-footer__social-item">
+          <li class="main-footer__social-item main-footer__social-item--ok">
             <a href="#">
               <span class="visually-hidden">Мы в одноклассниках</span>
             </a>
@@ -407,24 +411,26 @@
       <div class="main-footer__container-lists">
         <ul class="main-footer__about-list">
           <li class="main-footer__about-item"><h2 class="main-footer__about-list-title">Интернет-магазин</h2></li>
-          <li class="main-footer__about-item">Каталог</li>
-          <li class="main-footer__about-item">Доставка</li>
-          <li class="main-footer__about-item">Способы оплаты</li>
-          <li class="main-footer__about-item">О нас</li>
+          <li class="main-footer__about-item"><a href="#">Каталог</a></li>
+          <li class="main-footer__about-item"><a href="#">Доставка</a></li>
+          <li class="main-footer__about-item"><a href="#">Способы оплаты</a></li>
+          <li class="main-footer__about-item"><a href="#">О нас</a></li>
         </ul>
         <ul class="main-footer__about-list">
           <li class="main-footer__about-item"><h2 class="main-footer__about-list-title">Медиа</h2></li>
-          <li class="main-footer__about-item">Блог</li>
-          <li class="main-footer__about-item">Информация для СМИ</li>
-          <li class="main-footer__about-item">Правовая информация</li>
+          <li class="main-footer__about-item"><a href="#">Блог</a></li>
+          <li class="main-footer__about-item"><a href="#">Информация для СМИ</a></li>
+          <li class="main-footer__about-item"><a href="#">Правовая информация</a></li>
         </ul>
         <ul class="main-footer__about-list">
           <li class="main-footer__about-item"><h2 class="main-footer__about-list-title">Контакты</h2></li>
-          <li class="main-footer__about-item main-footer__about-item--adress">Санкт-Петербург, набережная реки Карповки, дом 5</li>
-          <li class="main-footer__about-item main-footer__about-item--numbers">+7 (999) 999-99-99</li>
+          <address class="main-footer__about-item">
+            <p class="main-footer__adress">Санкт-Петербург, набережная реки Карповки, дом 5</p>
+            <a href="tel:+7(999)999-99-99" class="main-footer__number">+7 (999) 999-99-99</a>
+          </address>
         </ul>
       </div>
-      <a href="#" class="main-footer__academy">Разработано в HTML Academy</a>
+      <p class="main-footer__from">Разработано в&nbsp;<a href="#" class="main-footer__academy"> HTML Academy</a></p>
     </footer>
     <script type="module" src="./scripts/index.js"></script>
     <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
