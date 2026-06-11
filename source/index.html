@@ -181,99 +181,103 @@
         <h2 class="catalog__title section-title">Каталог</h2>
         <h3 class="catalog__form-title">Каталог кофейных напитков</h3>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="catalog__filter-group">
-            <legend class="catalog__filter-title">Цена</legend>
-            <div class="catalog__slider" id="mySlider"></div>
-            <div class="catalog__price-container">
-              <input type="text" class="catalog__value catalog__value--min" placeholder="от">
-              <span></span>
-              <input type="text" class="catalog__value catalog__value--max" placeholder="до">
-            </div>
-          </fieldset>
-          <fieldset class="catalog__radio-group">
-            <legend class="catalog__filter-title">Наличие молока</legend>
-            <ul class="catalog__radio-list">
-              <li class="catalog__radio-item">
-                <label class="catalog__radio-label">
-                  <input type="radio" name="product-group" class="catalog__input" checked>
+          <div class="catalog__form-filtrs">
+            <fieldset class="catalog__filter-group">
+              <legend class="catalog__filter-title">Цена</legend>
+              <div class="catalog__slider" id="mySlider"></div>
+              <div class="catalog__price-container">
+                <input type="text" class="catalog__value catalog__value--min" placeholder="от">
+                <span></span>
+                <input type="text" class="catalog__value catalog__value--max" placeholder="до">
+              </div>
+            </fieldset>
+            <fieldset class="catalog__radio-group">
+              <legend class="catalog__filter-title">Наличие молока</legend>
+              <ul class="catalog__radio-list">
+                <li class="catalog__radio-item">
+                  <label class="catalog__radio-label">
+                    <input type="radio" name="product-group" class="catalog__input" checked>
+                      <span class="catalog__label-custom"></span>
+                      <span class="catalog__label-text">Неважно</span>
+                  </label>
+                </li>
+                <li class="catalog__radio-item">
+                  <label class="catalog__radio-label">
+                    <input type="radio" name="product-group" class="catalog__input">
                     <span class="catalog__label-custom"></span>
-                    <span class="catalog__label-text">Неважно</span>
-                </label>
-              </li>
-              <li class="catalog__radio-item">
-                <label class="catalog__radio-label">
-                  <input type="radio" name="product-group" class="catalog__input">
-                  <span class="catalog__label-custom"></span>
-                  <span class="catalog__label-text">Только животное</span>
-                </label>
-              </li>
-              <li class="catalog__radio-item">
-                <label class="catalog__radio-label">
-                  <input type="radio" name="product-group" class="catalog__input">
-                  <span class="catalog__label-custom"></span>
-                  <span class="catalog__label-text">Только растительное</span>
-                </label>
-              </li>
-              <li class="catalog__radio-item">
-                <label class="catalog__radio-label">
-                  <input type="radio" name="product-group" class="catalog__input" disabled>
-                  <span class="catalog__label-custom"></span>
-                  <span class="catalog__label-text">Без молока</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog__check-group">
-            <legend class="catalog__filter-title">Страна произрастания</legend>
-            <ul class="catalog__check-list">
-              <li class="catalog__check-item">
-                <label class="catalog__check-label">
-                  <input type="checkbox" name="product-group">
-                  <span class="catalog__custom-checkbox"></span>
-                  <span class="catalog__label-text">Бразилия</span>
-                </label>
-              </li>
-              <li class="catalog__check-item">
-                <label class="catalog__check-label">
-                  <input type="checkbox" name="product-group">
-                  <span class="catalog__custom-checkbox"></span>
-                  <span class="catalog__label-text">Эфиопия</span>
-                </label>
-              </li>
-              <li class="catalog__check-item">
-                <label class="catalog__check-label">
-                  <input type="checkbox" name="product-group">
-                  <span class="catalog__custom-checkbox"></span>
-                  <span class="catalog__label-text">Колумбия</span>
-                </label>
-              </li>
-              <li class="catalog__check-item">
-                <label class="catalog__check-label">
-                  <input type="checkbox" name="product-group">
-                  <span class="catalog__custom-checkbox"></span>
-                  <span class="catalog__label-text">Коста-Рика</span>
-                </label>
-              </li>
-              <li class="catalog__check-item">
-                <label class="catalog__check-label">
-                  <input type="checkbox" name="product-group" disabled>
-                  <span class="catalog__custom-checkbox"></span>
-                  <span class="catalog__label-text">Перу</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="button" class="button cotolog__button">Применить</button>
-          <button type="button" class="button cotolog__button cotolog__button--reset">Сбросить</button>
-          <fieldset class="catalog__sorting-group">
-            <h3 class="catalog__sorting-title">Сортировка:</h3>
-            <div class="catalog__select-container">
-              <select class="catalog__select" aria-label="Сортировка">
-                <option value="default">по умолчанию</option>
-              </select>
-            </div>
-          </fieldset>
+                    <span class="catalog__label-text">Только животное</span>
+                  </label>
+                </li>
+                <li class="catalog__radio-item">
+                  <label class="catalog__radio-label">
+                    <input type="radio" name="product-group" class="catalog__input">
+                    <span class="catalog__label-custom"></span>
+                    <span class="catalog__label-text">Только растительное</span>
+                  </label>
+                </li>
+                <li class="catalog__radio-item">
+                  <label class="catalog__radio-label">
+                    <input type="radio" name="product-group" class="catalog__input" disabled>
+                    <span class="catalog__label-custom"></span>
+                    <span class="catalog__label-text">Без молока</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog__check-group">
+              <legend class="catalog__filter-title">Страна произрастания</legend>
+              <ul class="catalog__check-list">
+                <li class="catalog__check-item">
+                  <label class="catalog__check-label">
+                    <input type="checkbox" name="product-group">
+                    <span class="catalog__custom-checkbox"></span>
+                    <span class="catalog__label-text">Бразилия</span>
+                  </label>
+                </li>
+                <li class="catalog__check-item">
+                  <label class="catalog__check-label">
+                    <input type="checkbox" name="product-group">
+                    <span class="catalog__custom-checkbox"></span>
+                    <span class="catalog__label-text">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="catalog__check-item">
+                  <label class="catalog__check-label">
+                    <input type="checkbox" name="product-group">
+                    <span class="catalog__custom-checkbox"></span>
+                    <span class="catalog__label-text">Колумбия</span>
+                  </label>
+                </li>
+                <li class="catalog__check-item">
+                  <label class="catalog__check-label">
+                    <input type="checkbox" name="product-group">
+                    <span class="catalog__custom-checkbox"></span>
+                    <span class="catalog__label-text">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="catalog__check-item">
+                  <label class="catalog__check-label">
+                    <input type="checkbox" name="product-group" disabled>
+                    <span class="catalog__custom-checkbox"></span>
+                    <span class="catalog__label-text">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="catalog__buttons">
+            <button type="button" class="button cotolog__button">Применить</button>
+            <button type="button" class="button cotolog__button cotolog__button--reset">Сбросить</button>
+          </div>
         </form>
+        <div class="catalog__sorting-group">
+          <h3 class="catalog__sorting-title">Сортировка:</h3>
+          <div class="catalog__select-container">
+            <select class="catalog__select" aria-label="Сортировка">
+              <option value="default">по умолчанию</option>
+            </select>
+          </div>
+        </div>
         <ul class="catalog__product-list">
           <li class="catalog__product-item">
             <picture>
@@ -370,7 +374,7 @@
             <a class="catalog__pagination-link" href="#">3</a>
           </li>
           <li class="catalog__pagination-item">
-            <a class="catalog__pagination-link catalog__pagination--scroll catalog__pagination-next" href="#">
+            <a class="catalog__pagination-link catalog__pagination--scroll catalog__pagination--next" href="#">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
@@ -383,7 +387,7 @@
     <footer class="main-footer">
       <div class="main-footer__container-logo">
         <picture>
-            <source media="(min-width:768px)" width="82" height="36" srcset="images/desktop-logo-drink.svg" type="image/svg+xml">
+            <source media="(min-width:768px)" width="170" height="36" srcset="images/desktop-logo-drink.svg" type="image/svg+xml">
             <img src="images/table-logo-drink.svg" alt="логотип магазина" width="82" height="36">
         </picture>
         <p class="main-footer__description">
